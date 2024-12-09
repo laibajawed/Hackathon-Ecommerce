@@ -1,101 +1,402 @@
-import Image from "next/image";
 
-export default function Home() {
-  return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
-        </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+
+
+import { IoIosArrowForward } from "react-icons/io";
+
+import { CiAlarmOn } from "react-icons/ci";
+import { BsGraphUp } from "react-icons/bs";
+
+
+
+
+
+
+
+export default function Navbar(){
+
+ 
+
+    return(
+        <main>
+    
+    
+
+    
+
+
+{/* hero section */}
+<div className="">
+  <img
+     src="/hero.jpeg"
+      alt="img"
+      className="w-[1439px] h-[716px]"
+   />
+   <div className=" absolute md:ml-[198px] top-0 mt-[350px]">
+      <h2 className=" font-bold text-white">
+        Summer 2020
+      </h2>
+      <h1 className="text-6xl mt-11 font-bold text-white">
+        NEW COLLECTION
+      </h1>
+
+      <p className="mt-11 text-white">we know how large objects will act,<br/>but things on a small scale.</p>
+
+      <button className="text-white w-[221px] h-[62px] bg-green-500 mt-11 flex items-center justify-center text-2xl font-semibold">SHOP NOW</button>
     </div>
-  );
+
+    {/* EDITORS PICK SECTION */}
+
+
+    <div className="bg-gray-50  ">
+      <div>
+      <h1 className="text-center py-4  text-blue-950 font-semibold text-2xl">EDITOR'S PICK</h1>
+      <p className="text-center text-gray-500 font-semibold">Problems trying to resolve the conflict between</p>
+      </div>
+      <div className="md:ml-[198px] mt-9  md:w-[1050px] md:h-[670px] md:flex  space-x-6 relative">
+        <img src="/pic4.jpeg" alt="#" className="w-[510px] h-[500px]"/>
+        <button className="w-[161px] h-[52px] bg-white absolute top-[420px] font-semibold">MEN</button>
+        <img src="/pic3.jpeg" alt="" className="w-[240px] h-[500px] "/>
+        <button className="w-[161px] h-[52px] ml-72 bg-white absolute md:top-[420px] top-[780px] md:left-[550px] font-semibold">WOMAN</button>
+        <div className="">
+        <img src="/pic2.jpeg" alt="" className="w-[240px] h-[242px]"/>
+        <button className="w-[161px] h-[52px] md:ml-72 bg-white absolute md:top-[170px] md:left-[550px] font-semibold">ACCESSORIES</button>
+        <img src="/pic1.jpeg" alt="" className="w-[240px] h-[242px] mt-4"/>
+        <button className="w-[161px] h-[52px] md:ml-72 bg-white absolute md:top-[420px] md:left-[550px] font-semibold">KIDS</button>
+    </div>
+      </div>
+    </div>
+</div>
+
+
+{/* Featured Products */}
+
+
+<div>
+<div className="mt-16">
+  <h2 className="text-center text-gray-500 font-semibold">Featured Products</h2>
+  <h1 className="text-center text-blue-950 font-semibold text-2xl mt-4">BESTSELLER PRODUCTS</h1>
+  <p className="text-center text-gray-500 font-semibold mt-4">Problems trying to resolve the conflict<br/>between</p>
+  </div>
+
+  <div className="md:ml-[100px] md:grid md:grid-cols-4 mt-20">
+  <img src="/gp8.jpeg" alt="" className="w-[239px] h-[427px]" />
+  <img src="/gp1.jpeg" alt="" className="w-[239px] h-[427px]" />
+  <img src="/gp2.jpeg" alt="" className="w-[239px] h-[427px]" />
+  <img src="/gp3.jpeg" alt="" className="w-[239px] h-[427px]" />
+  </div>
+  <div className="md:flex md:items-center  md:text-center">
+  <div className="mt-6 md:ml-[150px]">
+    <h1 className="font-semibold text-blue-950">Graphic Design</h1>
+    <p className="font-semibold text-gray-500 mt-4">English Department</p>
+    <p className="mt-4 text-gray-400 font-semibold">$16.48 <span className="text-green-700">$6.48</span></p>
+   
+  </div>
+  <div className="mt-6 md:ml-[170px]">
+    <h1 className="font-semibold text-blue-950">Graphic Design</h1>
+    <p className="font-semibold text-gray-500 mt-4">English Department</p>
+    <p className="mt-4 text-gray-400 font-semibold">$16.48 <span className="text-green-700">$6.48</span></p>
+  </div>
+  <div className="mt-6 md:ml-[180px]">
+    <h1 className="font-semibold text-blue-950">Graphic Design</h1>
+    <p className="font-semibold text-gray-500 mt-4">English Department</p>
+    <p className="mt-4 text-gray-400 font-semibold">$16.48 <span className="text-green-700">$6.48</span></p>
+  </div>
+  <div className="mt-6 md:ml-[190px]">
+    <h1 className="font-semibold text-blue-950">Graphic Design</h1>
+    <p className="font-semibold text-gray-500 mt-4">English Department</p>
+    <p className="mt-4 text-gray-400 font-semibold">$16.48 <span className="text-green-700">$6.48</span></p>
+  </div>
+  </div>
+
+<div className="md:flex">
+
+  <div className="md:flex mt-4 md:ml-[170px] space-x-2">
+    <div className="w-5 h-5 rounded-full bg-sky-500"/>
+    <div className="w-5 h-5 rounded-full bg-green-700"/>
+    <div className="w-5 h-5 rounded-full bg-orange-500"/>
+    <div className="w-5 h-5 rounded-full bg-black"/>
+    </div>
+    <div className="md:flex mt-4 md:ml-[220px] space-x-2">
+    <div className="w-5 h-5 rounded-full bg-sky-500"/>
+    <div className="w-5 h-5 rounded-full bg-green-700"/>
+    <div className="w-5 h-5 rounded-full bg-orange-500"/>
+    <div className="w-5 h-5 rounded-full bg-black"/>
+    </div>
+
+    <div className="md:flex mt-4 md:ml-[230px] space-x-2">
+    <div className="w-5 h-5 rounded-full bg-sky-500"/>
+    <div className="w-5 h-5 rounded-full bg-green-700"/>
+    <div className="w-5 h-5 rounded-full bg-orange-500"/>
+    <div className="w-5 h-5 rounded-full bg-black"/>
+    </div>
+
+    <div className="md:flex mt-4 md:ml-[240px] space-x-2">
+    <div className="w-5 h-5 rounded-full bg-sky-500"/>
+    <div className="w-5 h-5 rounded-full bg-green-700"/>
+    <div className="w-5 h-5 rounded-full bg-orange-500"/>
+    <div className="w-5 h-5 rounded-full bg-black"/>
+    </div>
+
+    </div>
+
+
+
+    <div className="ml-[100px] grid grid-cols-4 mt-20">
+  <img src="/gp4.jpeg" alt="" className="w-[239px] h-[427px]" />
+  <img src="/gp5.jpeg" alt="" className="w-[239px] h-[427px]" />
+  <img src="/gp6.jpeg" alt="" className="w-[239px] h-[427px]" />
+  <img src="/gp7.jpeg" alt="" className="w-[239px] h-[427px]" />
+  </div>
+  <div className="flex items-center  text-center">
+  <div className="mt-6 ml-[150px]">
+    <h1 className="font-semibold text-blue-950">Graphic Design</h1>
+    <p className="font-semibold text-gray-500 mt-4">English Department</p>
+    <p className="mt-4 text-gray-400 font-semibold">$16.48 <span className="text-green-700">$6.48</span></p>
+   
+  </div>
+  <div className="mt-6 ml-[170px]">
+    <h1 className="font-semibold text-blue-950">Graphic Design</h1>
+    <p className="font-semibold text-gray-500 mt-4">English Department</p>
+    <p className="mt-4 text-gray-400 font-semibold">$16.48 <span className="text-green-700">$6.48</span></p>
+  </div>
+  <div className="mt-6 ml-[180px]">
+    <h1 className="font-semibold text-blue-950">Graphic Design</h1>
+    <p className="font-semibold text-gray-500 mt-4">English Department</p>
+    <p className="mt-4 text-gray-400 font-semibold">$16.48 <span className="text-green-700">$6.48</span></p>
+  </div>
+  <div className="mt-6 ml-[190px]">
+    <h1 className="font-semibold text-blue-950">Graphic Design</h1>
+    <p className="font-semibold text-gray-500 mt-4">English Department</p>
+    <p className="mt-4 text-gray-400 font-semibold">$16.48 <span className="text-green-700">$6.48</span></p>
+  </div>
+  </div>
+
+<div className="flex">
+
+  <div className="flex mt-4 ml-[170px] space-x-2">
+    <div className="w-5 h-5 rounded-full bg-sky-500"/>
+    <div className="w-5 h-5 rounded-full bg-green-700"/>
+    <div className="w-5 h-5 rounded-full bg-orange-500"/>
+    <div className="w-5 h-5 rounded-full bg-black"/>
+    </div>
+    <div className="flex mt-4 ml-[220px] space-x-2">
+    <div className="w-5 h-5 rounded-full bg-sky-500"/>
+    <div className="w-5 h-5 rounded-full bg-green-700"/>
+    <div className="w-5 h-5 rounded-full bg-orange-500"/>
+    <div className="w-5 h-5 rounded-full bg-black"/>
+    </div>
+
+    <div className="flex mt-4 ml-[230px] space-x-2">
+    <div className="w-5 h-5 rounded-full bg-sky-500"/>
+    <div className="w-5 h-5 rounded-full bg-green-700"/>
+    <div className="w-5 h-5 rounded-full bg-orange-500"/>
+    <div className="w-5 h-5 rounded-full bg-black"/>
+    </div>
+
+    <div className="flex mt-4 ml-[240px] space-x-2">
+    <div className="w-5 h-5 rounded-full bg-sky-500"/>
+    <div className="w-5 h-5 rounded-full bg-green-700"/>
+    <div className="w-5 h-5 rounded-full bg-orange-500"/>
+    <div className="w-5 h-5 rounded-full bg-black"/>
+    </div>
+
+    </div>
+
+  </div>
+
+
+{/* new section */}
+
+
+<div className="w-full h-[709px] bg-emerald-700 mt-40 py-[125px]">
+  <div>
+    <img src="/hero2.png" alt="" className="w-[410px] h-[585px] ml-[800px] "/>
+
+    <div className="md:w-full absolute md:ml-[198px] top-[3350px] md:mt-[350px]">
+      <h2 className=" font-bold text-white">
+        SUMMER 2020
+      </h2>
+      <h1 className="text-6xl mt-11 font-bold text-white">
+        Vita Classic<br/>Product
+      </h1>
+
+      <p className="mt-11 text-white">we know how large objects will act,<br/>but things on a small scale.</p>
+      <div className="flex items-center space-x-6">
+      <p className="mt-11 text-white text-2xl font-semibold">$16.48</p> 
+      <button className="text-white w-[212px] h-[52px] bg-emerald-500 mt-11 flex items-center justify-center  font-semibold rounded-sm">ADD TO CART</button>
+      
+      </div>
+</div>
+  </div>
+  
+
+</div>
+
+
+{/* section2 */}
+<div className="flex">
+<div>
+          <img src="/asian.png" alt="" className="w-[704px] h-[682px]"/>
+</div>
+<div className="mt-[200px]">
+<h2 className=" font-bold text-gray-400">
+        SUMMER 2020
+      </h2>
+      <h1 className="text-6xl mt-11 font-bold text-blue-950">
+        Part of the Nueral<br/>Universe
+      </h1>
+
+      <p className="mt-11 text-gray-500">we know how large objects will act,<br/>but things on a small scale.</p>
+      <div className="md:flex items-center space-x-6">
+      <button className=" w-[212px] h-[52px] mt-11 text-white  font-semibold bg-emerald-500 rounded-sm">BUY NOW</button> 
+      <button className=" w-[212px] h-[52px] text-emerald-500 mt-11 flex items-center justify-center border border-emerald-500 font-semibold rounded-sm">READ MORE</button>
+      </div>
+</div>
+</div>
+
+
+{/* featuredpost */}
+
+<div>
+
+<div className="mt-16">
+  <h2 className="text-center text-sky-500 font-semibold">Practice Advise</h2>
+  <h1 className="text-center text-blue-950 font-semibold text-2xl mt-4">Featured Posts</h1>
+  <p className="text-center text-gray-500 font-semibold mt-4">Problems trying to resolve the conflict between<br/>the two realms of Classical physics: Newtonian mechanics</p>
+  </div>
+
+<div className="md:flex">
+
+<div>
+<div className="w-[348px] h-[606px] bg-white shadow-md md:ml-[100px] mt-16">
+  <img src="/house.jpeg" alt="" className="w-[348px] h-[300px]"/>
+  <ul className="flex ml-6 space-x-2 mt-5">
+    <li className="text-sky-500">Google</li>
+    <li>Trending</li>
+    <li>New</li>
+  </ul>
+  <h1 className="ml-6 mt-2 text-2xl">Loudest à la Madison #1<br/> 
+  (L'integral)</h1>
+  <p className="ml-6 mt-2 font-extralight text-gray-500">We focus on ergonomics and meeting<br/> 
+you where you work. It's only a<br/>
+keystroke away.</p>
+
+<div className="flex">
+<div className="flex items-center">
+  <CiAlarmOn className="w-6 h-6 ml-6 mt-2 text-sky-500"/>
+  <p className="text-gray-500 font-extralight mt-2">22 April 2021</p>
+</div>
+
+<div className="flex items-center">
+  <BsGraphUp className="w-6 h-6 ml-14 mt-2 text-green-800"/>
+  <p className="text-gray-500 font-extralight mt-2">10 Components</p>
+</div>
+
+</div>
+<div className="flex items-center">
+<h1 className="text-gray-600 font-semibold mt-5 ml-6">Learn More</h1>
+<IoIosArrowForward className="text-sky-500 mt-5 w-7 h-7"/>
+
+</div>
+</div>
+
+
+</div>
+
+
+
+
+<div>
+<div className="w-[348px] h-[606px] bg-white shadow-md md:ml-[100px] mt-16">
+  <img src="/car.jpeg" alt="" className="w-[348px] h-[300px]"/>
+  <ul className="flex ml-6 space-x-2 mt-5">
+    <li className="text-sky-500">Google</li>
+    <li>Trending</li>
+    <li>New</li>
+  </ul>
+  <h1 className="ml-6 mt-2 text-2xl">Loudest à la Madison #1<br/> 
+  (L'integral)</h1>
+  <p className="ml-6 mt-2 font-extralight text-gray-500">We focus on ergonomics and meeting<br/> 
+you where you work. It's only a<br/>
+keystroke away.</p>
+
+<div className="flex">
+<div className="flex items-center">
+  <CiAlarmOn className="w-6 h-6 ml-6 mt-2 text-sky-500"/>
+  <p className="text-gray-500 font-extralight mt-2">22 April 2021</p>
+</div>
+
+<div className="flex items-center">
+  <BsGraphUp className="w-6 h-6 ml-14 mt-2 text-green-800"/>
+  <p className="text-gray-500 font-extralight mt-2">10 Components</p>
+</div>
+
+</div>
+<div className="flex items-center">
+<h1 className="text-gray-600 font-semibold mt-5 ml-6">Learn More</h1>
+<IoIosArrowForward className="text-sky-500 mt-5 w-7 h-7"/>
+
+</div>
+</div>
+
+
+</div>
+
+
+
+
+
+<div>
+<div className="w-[348px] h-[606px] bg-white shadow-md md:ml-[100px] mt-16">
+  <img src="/umbrella.jpeg" alt="" className="w-[348px] h-[300px]"/>
+  <ul className="flex ml-6 space-x-2 mt-5">
+    <li className="text-sky-500">Google</li>
+    <li>Trending</li>
+    <li>New</li>
+  </ul>
+  <h1 className="ml-6 mt-2 text-2xl">Loudest à la Madison #1<br/> 
+  (L'integral)</h1>
+  <p className="ml-6 mt-2 font-extralight text-gray-500">We focus on ergonomics and meeting<br/> 
+you where you work. It's only a<br/>
+keystroke away.</p>
+
+
+<div className="flex">
+<div className="flex items-center">
+  <CiAlarmOn className="w-6 h-6 ml-6 mt-2 text-sky-500"/>
+  <p className="text-gray-500 font-extralight mt-2">22 April 2021</p>
+</div>
+
+<div className="flex items-center">
+  <BsGraphUp className="w-6 h-6 ml-14 mt-2 text-green-800"/>
+  <p className="text-gray-500 font-extralight mt-2">10 Components</p>
+</div>
+
+</div>
+<div className="flex items-center">
+<h1 className="text-gray-600 font-semibold mt-5 ml-6">Learn More</h1>
+<IoIosArrowForward className="text-sky-500 mt-5 w-7 h-7"/>
+
+</div>
+</div>
+
+</div>
+
+
+</div>
+
+</div>
+
+
+
+
+
+
+
+
+     
+
+</main>
+    )
 }
