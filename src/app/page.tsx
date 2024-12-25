@@ -18,7 +18,7 @@ export default function Navbar(){
  
 
     return(
-        <main>
+       <> <main>
     
     
 
@@ -388,15 +388,11 @@ keystroke away.</p>
 
 </div>
 
-
-
-
-
-
-
-
-     
-
 </main>
+</> 
     )
+
 }
+
+
+

@@ -27,7 +27,7 @@ export default function About(){
     
         </div>
 
-
+</div>
         <div>
             <p className="md:ml-[100px] ml-[150px] text-red-600 mt-36">
                 Problems trying
