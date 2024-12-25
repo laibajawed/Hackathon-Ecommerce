@@ -1,5 +1,5 @@
+/* eslint-disable @next/next/no-img-element */
 import { IoIosArrowForward } from "react-icons/io";
-
 import { FaInstagram } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
 import { FaYoutube } from "react-icons/fa";

@@ -1,8 +1,8 @@
+/* eslint-disable @next/next/no-img-element */
+/* eslint-disable react/no-unescaped-entities */
 "use client";
 
-
 import { IoIosArrowRoundForward } from "react-icons/io";
-
 import { IoCallOutline } from "react-icons/io5";
 import { TiMail } from "react-icons/ti";
 import { FaInstagram } from "react-icons/fa";

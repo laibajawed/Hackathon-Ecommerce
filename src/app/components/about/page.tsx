@@ -1,16 +1,11 @@
+/* eslint-disable @next/next/no-img-element */
 import { FaInstagram } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
-
 import { FaFacebook } from "react-icons/fa";
-
 import { RxTriangleRight } from "react-icons/rx";
 
 
 export default function About(){
-
-
- 
-
 
   
     return (
@@ -29,8 +24,7 @@ export default function About(){
            
         <div className="md:w-[484px] md:h-[484px] w-[200px] h-[200px] bg-red-100 rounded-full md:ml-[500px] ml-[100px] mt-9">
         <img src="/aboutgirl.png" alt="" className="md:w-[571px] w-[171px] md:h-[668px] h-[268px] md:pb-16"/>
-
-        </div>
+    
         </div>
 
 

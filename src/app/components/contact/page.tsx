@@ -1,13 +1,12 @@
+/* eslint-disable @next/next/no-img-element */
+/* eslint-disable react/no-unescaped-entities */
 import { IoCallOutline } from "react-icons/io5";
 import { TiMail } from "react-icons/ti";
 import { FaInstagram } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
 import { FaYoutube } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa";
-
 import { FaLocationDot } from "react-icons/fa6";
-
-
 import { CgArrowLongDownR } from "react-icons/cg";
 
 

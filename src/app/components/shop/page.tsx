@@ -1,8 +1,6 @@
+/* eslint-disable @next/next/no-img-element */
+/* eslint-disable react/no-unescaped-entities */
 import { IoIosArrowDown } from "react-icons/io";
-
-
-
-
 import { TfiMenuAlt } from "react-icons/tfi";
 import { MdWindow } from "react-icons/md";
 
