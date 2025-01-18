@@ -27,23 +27,23 @@ export default function Navbar(){
 
 
 {/* hero section */}
-<div className="">
+<div className="relative">
   <img
      src="/hero.jpeg"
       alt="img"
-      className="w-[1439px] h-[716px]"
+      className="w-full h-[60vh] md:h-[80vh] object-cover"
    />
-   <div className=" absolute md:ml-[198px] top-0 mt-[350px]">
-      <h2 className=" font-bold text-white">
+   <div className=" absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center px-6 md:left-[198px] md:text-left">
+      <h2 className=" text-xl md:text-2xl lg:text-3xl font-bold text-white">
         Summer 2020
       </h2>
-      <h1 className="text-6xl mt-11 font-bold text-white">
+      <h1 className="text-3xl md:text-5xl lg:text-6xl mt-4 md:mt-6 font-bold text-white">
         NEW COLLECTION
       </h1>
 
-      <p className="mt-11 text-white">we know how large objects will act,<br/>but things on a small scale.</p>
+      <p className="mt-4 md:mt-6 text-sm md:text-base lg:text-lg text-white">we know how large objects will act,<br/>but things on a small scale.</p>
 
-      <button className="text-white w-[221px] h-[62px] bg-green-500 mt-11 flex items-center justify-center text-2xl font-semibold">SHOP NOW</button>
+      <button className="mt-6 md:mt-8 w-full md:w-[221px] h-[50px] md:h-[62px] bg-green-500 flex items-center justify-center text-lg md:text-xl font-semibold text-white">SHOP NOW</button>
     </div>
 
     {/* EDITORS PICK SECTION */}
